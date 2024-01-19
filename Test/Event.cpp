@@ -64,6 +64,7 @@ void Event::PickPerson()
 		if (num == max) num = 0;
 		if (i != RouletteTurn - 1) {
 			int time = pow(1.1, i);
+			//int time = pow(1, i);
 			cout << "- " << list[num] << endl;
 			Sleep(time);
 			system("cls");
@@ -79,6 +80,16 @@ void Event::PickPerson()
 
 		}
 		num++;
+	}
+}
+
+void Event::GetList()
+{	
+	cout << "[ 참가자 목록 ]" << endl;
+
+	for (int i = 0; i < list.size(); i++)
+	{
+		cout << "- " << list[i] << endl;
 	}
 }
 

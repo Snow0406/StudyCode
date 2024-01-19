@@ -14,6 +14,9 @@ int main() {
 			event.PickPerson();
 			break;
 		case 2:
+			event.GetList();
+			break;
+		case 0:
 			start = false;
 			break;
 		}
