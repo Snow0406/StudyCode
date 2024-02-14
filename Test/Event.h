@@ -17,10 +17,10 @@ private:
 	void Shuffle();
 
 private:
-	std::vector<std::string> user = { "Harin", "³óº¸", "ÄðÄ¥", "³Ä¿Ë³Ä¿Ë", "½º³ë¿ì", "¤·¤µ¤· (»ç·Î·Î)", "±×¸°", "Le Fay", "NBLim", "¹ÎÈ£", "È¯¼ö", "¿©³ë", "À¯°æ", 
-		"(È£µÎ)³ª¹«", "½Â±â", "»÷Áî", "»çÄª", "¹í»õ", "¹ÌÁî", "ºôµå", "³ë´Â¾Û", "ADA_CAN", "frolicking_flames", "ample", "À¯°â", "¤¸¤©", "±èÀ¯·¡", "³î²¤ÀÌ", "¹ÙÇ®",
-		"Ã÷·ç±â»ç¶ûÇØ", "ÆËÄÜ", "anon.dart", "delta", "keystone7", "SSR*SG", "Viento", "White Choco"};
-	std::vector<std::string> boost = { "³Ä¿Ë³Ä¿Ë", "SSR*SG"};
+	std::vector<std::string> user = { "Harin", "³óº¸",  "½º³ë¿ì", "¤·¤µ¤· (»ç·Î·Î)", "±×¸°", "Le Fay", "NBLim", "¹ÎÈ£", "È¯¼ö", "¿©³ë", "À¯°æ", 
+		"(È£µÎ)³ª¹«", "½Â±â", "»÷Áî", "»çÄª", "¹í»õ", "ºôµå", "³ë´Â¾Û", "CAN_ADA", "À¯°â", "¤¸¤©", "³î²¤ÀÌ", "È­º£", "ÆËÄÜ", "SSR*SG", "Viento", 
+		"White Choco", "SAMPPLE "};
+	std::vector<std::string> boost = { "SSR*SG", "NBLim", "CAN_ADA" };
 	std::vector<std::string> list = {};
 };
 
