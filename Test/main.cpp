@@ -14,7 +14,6 @@ int main() {
 	endl << "4 : 목록 보기" << 
 	endl << "0 : 종료" << endl;
 
-
 	while (start)
 	{
 		
