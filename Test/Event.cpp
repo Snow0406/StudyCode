@@ -1,6 +1,5 @@
 ﻿#include "Event.h"
 
-#include <iostream>
 #include <Windows.h>
 #include <random>
 #include <algorithm>
@@ -53,6 +52,11 @@ void Gotoxy(int x, int y)
 
 void Event::PickPerson()
 {
+	if (list.size() == 0) {
+		cout << "리스트 세팅을 안 했습니다" << endl;
+		return;
+	}
+
 	Shuffle();
 	auto winner = list[0];
 	int max = list.size();
@@ -85,18 +89,17 @@ void Event::PickPerson()
 
 void Event::GetList()
 {	
+	if (list.size() == 0) {
+		cout << "리스트가 비어있거나 세팅을 안 했습니다" << endl;
+		return;
+	}
+
 	cout << "[ 참가자 목록 ]" << endl;
 
 	for (int i = 0; i < list.size(); i++)
 	{
 		cout << "- " << list[i] << endl;
 	}
-}
-
-void Event::SetList()
-{
-	list.insert(list.end(), user.begin(), user.end());
-	list.insert(list.end(), boost.begin(), boost.end());
 }
 
 void Event::Shuffle()
@@ -107,8 +110,24 @@ void Event::Shuffle()
 	std::shuffle(list.begin(), list.end(), rng);
 }
 
+void Event::SetList(EventType type)
+{
+	switch (type)
+	{
+	case NORMAL:
+		list = user;
+		cout << "세팅 완료 : NORMAL" << endl;
+		break;
+	case PRO:
+		list = boost;
+		cout << "세팅 완료 : PRO" << endl;
+		break;
+	default:
+		break;
+	}
+}
+
 Event::Event()
 {
 	CursorView();
-	SetList();
 }
