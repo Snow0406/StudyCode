@@ -23,9 +23,9 @@ private:
 	void Shuffle();
 
 private:
-	std::vector<std::string> user = { "화초", "농보", "사로로", "스노우", "민호", "빌드", "메구밍", "유경", 
-		"gg", "졸려", "호두나무", "승기", "샌즈", "닉네임", "하윤", "뱁새", "노는앱", "Viento", "테니"};
-	std::vector<std::string> boost = { "앱", "스노우"};
+	std::vector<std::string> user = { "농보", "파스텔", "스노우", "환수", "다이인", "테이크케어", "gg", "호두나무", "눈누", "샌즈",
+	"캐나다", "앱"};
+	std::vector<std::string> boost = { "앱", "스노우", "환수"};
 	std::vector<std::string> list = {};
 };
 
